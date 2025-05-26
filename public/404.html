@@ -3,23 +3,35 @@
 <head>
   <meta charset="utf-8">
   <title>Page Not Found</title>
-  <script type="text/javascript">
-    // Redirigir a la página principal (index.html) manteniendo la ruta
-    // Esto permite que el router de React maneje la ruta 404
-    var pathSegmentsToKeep = window.location.pathname.split('/');
-    // Eliminar el primer segmento si es necesario (dependiendo de la configuración base)
-    // Como nuestra base es '/', no necesitamos eliminar segmentos aquí.
-    
-    // Construir la URL de redirección a index.html, pero manteniendo la ruta original en la barra de direcciones
-    var redirectUrl = window.location.protocol + '//' + window.location.host + '/?p=' + window.location.pathname + window.location.search + window.location.hash;
-    window.location.replace(redirectUrl);
-
-    // Nota: Este script es una solución común para GitHub Pages. Puede variar ligeramente
-    // dependiendo de la complejidad de tu configuración de enrutamiento.
-
-  </script>
+  <base href="/">
+  <!-- Aquí puedes incluir los enlaces a tus archivos CSS generados por Vite -->
+  <!-- Por ejemplo: <link rel="stylesheet" href="/assets/index-xxxxxxxx.css"> -->
+  <!-- La etiqueta <base href="/"> es crucial para que los assets se carguen correctamente -->
 </head>
 <body>
-  <p>Redirigiendo...</p>
+  <!-- Aquí es donde Vite inyecta tu aplicación React -->
+  <div id="root"></div>
+  <!-- Aquí puedes incluir los enlaces a tus archivos JavaScript generados por Vite -->
+  <!-- Por ejemplo: <script type="module" src="/assets/index-yyyyyyyy.js"></script> -->
+  <!-- Idealmente, Vite ya configura esto en el index.html que genera en dist -->
+  
+  <script type="module">
+    // Este script intenta cargar tu aplicación React
+    // En muchos casos, simplemente sirviendo este HTML con <div id="root"></div>
+    // y los enlaces correctos a tus bundles JS (que Vite añade a index.html)
+    // ya debería ser suficiente para que el router de React funcione.
+    // Si necesitas un script de redirección MÁS simple, podrías usar algo así:
+    // window.history.replaceState(null, null, window.location.pathname + window.location.search);
+    // window.location.replace('/'); // Esto redirige, pero a veces es necesario
+    // Sin embargo, con <base href="/"> y confiando en el router del lado del cliente,
+    // a menudo no necesitas redirección JavaScript.
+    
+    // Si tu index.html generado por Vite ya incluye los scripts y links de assets,
+    // la mejor opción es simplemente COPIAR el contenido de dist/index.html a dist/404.html
+    // para cada despliegue. El script de gh-pages a veces hace esto, o puedes añadirlo a tu "predeploy" script.
+    
+    // Por ahora, dejaremos este HTML básico que Vite debería llenar.
+    // Si esto no funciona, confirmaremos si gh-pages copia index.html a 404.html
+  </script>
 </body>
 </html> 
