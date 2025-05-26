@@ -39,9 +39,9 @@ const Layout: React.FC<LayoutProps> = ({ children }) => {
                 Home
               </Link>
               <Link
-                to="/sobre-mi"
+                to="/about"
                 className={`text-sm font-medium transition-colors duration-200 ${
-                  isActive('/sobre-mi') 
+                  isActive('/about') 
                     ? 'text-blue-600 border-b-2 border-blue-600' 
                     : 'text-gray-600 hover:text-blue-600'
                 }`}
@@ -49,9 +49,9 @@ const Layout: React.FC<LayoutProps> = ({ children }) => {
                 Sobre mí
               </Link>
               <Link
-                to="/contacto"
+                to="/contact"
                 className={`text-sm font-medium transition-colors duration-200 ${
-                  isActive('/contacto') 
+                  isActive('/contact') 
                     ? 'text-blue-600 border-b-2 border-blue-600' 
                     : 'text-gray-600 hover:text-blue-600'
                 }`}
