@@ -39,7 +39,8 @@ const MarkdownContent: React.FC<MarkdownContentProps> = ({ content }) => {
         blockquote: ({ node, ...props }) => (
           <blockquote className="border-l-4 border-gray-200 pl-4 italic text-gray-600 my-4" {...props} />
         ),
-        code: ({ node, inline, className, children, ...props }) => {
+        code: ({ node, className, children, inline: isInline, ...props }: any) => {
+          const inline = isInline ?? false;
           const match = /language-(\w+)/.exec(className || '');
           return !inline ? (
             <div className="bg-gray-50 rounded-lg p-4 my-4 overflow-x-auto">
