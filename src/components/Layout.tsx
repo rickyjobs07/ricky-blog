@@ -79,7 +79,7 @@ const Layout: React.FC<LayoutProps> = ({ children }) => {
             </div>
             <div className="flex space-x-6">
               <a
-                href="https://github.com/yourusername"
+                href="https://github.com/rickyshark"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-gray-600 hover:text-blue-600 transition-colors duration-200"
@@ -87,7 +87,7 @@ const Layout: React.FC<LayoutProps> = ({ children }) => {
                 GitHub
               </a>
               <a
-                href="https://linkedin.com/in/yourusername"
+                href="https://linkedin.com/in/monteroterrero"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-gray-600 hover:text-blue-600 transition-colors duration-200"
