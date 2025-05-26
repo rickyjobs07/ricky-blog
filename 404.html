@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Page Not Found</title>
+  <script type="text/javascript">
+    // Redirigir a la página principal (index.html) manteniendo la ruta
+    // Esto permite que el router de React maneje la ruta 404
+    var pathSegmentsToKeep = window.location.pathname.split('/');
+    // Eliminar el primer segmento si es necesario (dependiendo de la configuración base)
+    // Como nuestra base es '/', no necesitamos eliminar segmentos aquí.
+    
+    // Construir la URL de redirección a index.html, pero manteniendo la ruta original en la barra de direcciones
+    var redirectUrl = window.location.protocol + '//' + window.location.host + '/?p=' + window.location.pathname + window.location.search + window.location.hash;
+    window.location.replace(redirectUrl);
+
+    // Nota: Este script es una solución común para GitHub Pages. Puede variar ligeramente
+    // dependiendo de la complejidad de tu configuración de enrutamiento.
+
+  </script>
+</head>
+<body>
+  <p>Redirigiendo...</p>
+</body>
+</html> 
