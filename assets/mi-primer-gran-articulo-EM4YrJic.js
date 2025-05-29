@@ -1,4 +1,4 @@
-    ---
+const e=`    ---
     title: "Mi Primer Artículo en el Nuevo Blog"
     date: "2024-05-26"
     tags: ["primeros-pasos", "tutorial", "mi-experiencia"]
@@ -18,4 +18,5 @@
 
     Puedes encontrar el código fuente en [mi repositorio de GitHub](https://github.com/rickyjobs07/ricky-blog).
 
-    ¡Espero que disfruten el contenido que compartiré aquí!
+    ¡Espero que disfruten el contenido que compartiré aquí!`;export{e as default};
+//# sourceMappingURL=mi-primer-gran-articulo-EM4YrJic.js.map
