@@ -16,6 +16,6 @@
     *   **TypeScript:** Para añadir tipado estático y mejorar la robustez del código.
     *   **Tailwind CSS:** Para un styling rápido y consistente.
 
-    Puedes encontrar el código fuente en [mi repositorio de GitHub](https://github.com/tu-usuario/tu-repo-blog).
+    Puedes encontrar el código fuente en [mi repositorio de GitHub](https://github.com/rickyjobs07/ricky-blog).
 
     ¡Espero que disfruten el contenido que compartiré aquí!

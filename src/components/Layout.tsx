@@ -79,18 +79,18 @@ const Layout: React.FC<LayoutProps> = ({ children }) => {
             </div>
             <div className="flex space-x-6">
               <a
-                href="https://github.com/rickyshark"
+                href="https://github.com/rickyjobs07"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="text-gray-600 hover:text-blue-600 transition-colors duration-200"
+                className="text-gray-600 hover:text-gray-900"
               >
                 GitHub
               </a>
               <a
-                href="https://linkedin.com/in/monteroterrero"
+                href="https://www.linkedin.com/in/monteroterrero"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="text-gray-600 hover:text-blue-600 transition-colors duration-200"
+                className="text-gray-600 hover:text-gray-900"
               >
                 LinkedIn
               </a>
