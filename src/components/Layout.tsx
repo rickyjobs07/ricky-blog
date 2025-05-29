@@ -39,9 +39,9 @@ const Layout: React.FC<LayoutProps> = ({ children }) => {
                 Home
               </Link>
               <Link
-                to="/about"
+                to="/sobre-mi"
                 className={`text-sm font-medium transition-colors duration-200 ${
-                  isActive('/about') 
+                  isActive('/sobre-mi') 
                     ? 'text-blue-600 border-b-2 border-blue-600' 
                     : 'text-gray-600 hover:text-blue-600'
                 }`}
@@ -49,9 +49,9 @@ const Layout: React.FC<LayoutProps> = ({ children }) => {
                 Sobre mí
               </Link>
               <Link
-                to="/contact"
+                to="/contacto"
                 className={`text-sm font-medium transition-colors duration-200 ${
-                  isActive('/contact') 
+                  isActive('/contacto') 
                     ? 'text-blue-600 border-b-2 border-blue-600' 
                     : 'text-gray-600 hover:text-blue-600'
                 }`}
@@ -79,18 +79,18 @@ const Layout: React.FC<LayoutProps> = ({ children }) => {
             </div>
             <div className="flex space-x-6">
               <a
-                href="https://github.com/rickyjobs07"
+                href="https://github.com/yourusername"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="text-gray-600 hover:text-gray-900"
+                className="text-gray-600 hover:text-blue-600 transition-colors duration-200"
               >
                 GitHub
               </a>
               <a
-                href="https://www.linkedin.com/in/monteroterrero"
+                href="https://linkedin.com/in/yourusername"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="text-gray-600 hover:text-gray-900"
+                className="text-gray-600 hover:text-blue-600 transition-colors duration-200"
               >
                 LinkedIn
               </a>
